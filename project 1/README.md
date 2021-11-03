@@ -10,35 +10,35 @@ In this dataset, there are 8 features and 1 label. Most of the features are cate
 
 Education
 
-![](figures\Education.png)
+![Education](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/Education.png)
 
 JoiningYear
 
-![](figures\joining_year.png)
+![JoiningYear](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/joining_year.png)
 
 City
 
-![](figures\city.png)
+![City](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/city.png)
 
 PaymentTier
 
-![](figures\payment.png)
+![PaymentTier](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/payment.png)
 
 Age
 
-![](figures\age.png)
+![Age](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/age.png)
 
 Gender
 
-![](figures\gender.png)
+![Gender](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/gender.png)
 
 EverBenched
 
-![](figures\ever_benched.png)
+![EverBenched](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/ever_benched.png)
 
 ExperienceInCurrentDomain
 
-![](figures\exp.png)
+![ExperienceInCurrentDomain](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/exp.png)
 
 
 # *labels:* 
@@ -56,7 +56,7 @@ With these features, we will build a predictive model that returns the probabili
 # How to test the deployement?
 After deploying the predictive system, you can test it via the predict_test.py file provided. It posts the information of an employee and gets the probability of that employee leaving the company. 
 
-![](screenshots\predict_test.jpg)
+![test](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/screenshots/predict_test.jpg)
 
 
 # Dependency and environment management:
@@ -72,7 +72,7 @@ and then
 gunicorn --bind 0.0.0.0:9696 predict:app
 ```
 
-![](screenshots\pipenv-shell.jpg)
+![pipenv-shell](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/screenshots/pipenv-shell.jpg)
 
 
 # Containerization:
@@ -90,5 +90,5 @@ docker build -t project1 .
 docker run -it --rm -p 9696:9696 project1
 ```
 
-![](screenshots\docker.jpg)
+![docker](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/screenshots/docker.jpg)
 
