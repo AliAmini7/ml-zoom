@@ -92,3 +92,6 @@ docker run -it --rm -p 9696:9696 project1
 
 ![docker](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/screenshots/docker.jpg)
 
+# Cloud deployment
+Please refer to the readme file in the cloud deployement folder.
+
