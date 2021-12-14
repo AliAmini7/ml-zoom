@@ -92,6 +92,6 @@ docker run -it --rm -p 9696:9696 project1
 
 
 # How to test the deployement?
-After deploying the predictive system, you can test it via the predict_test.py file provided. It posts the information of an employee and gets the probability of that employee leaving the company. 
+After deploying the predictive system, you can test it via the predict_test.py file provided. It posts the information of a client and gets the probability of that client applying for a product. 
 
 
