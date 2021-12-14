@@ -72,7 +72,6 @@ and then
 gunicorn --bind 0.0.0.0:9696 predict:app
 ```
 
-![pipenv-shell](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/screenshots/pipenv-shell.jpg)
 
 
 # Containerization:
@@ -90,10 +89,9 @@ docker build -t project1 .
 docker run -it --rm -p 9696:9696 project1
 ```
 
-![docker](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/screenshots/docker.jpg)
 
 
 # How to test the deployement?
 After deploying the predictive system, you can test it via the predict_test.py file provided. It posts the information of an employee and gets the probability of that employee leaving the company. 
 
-![test](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/screenshots/predict_test.jpg)
+
