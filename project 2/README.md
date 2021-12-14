@@ -1,62 +1,62 @@
-This [dataset](https://www.kaggle.com/tejashvi14/employee-future-prediction) is taken from Kaggle. 
+This [dataset](https://www.openml.org/d/1461) is taken from Open ML. 
 
 # About The Data
 
-A company's HR department wants to predict whether some customers would leave the company in next 2 years. We are building a predictive model that predicts the prospects of future and present employee.
+Bank Marketing
+The data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be (or not) subscribed.
 
-In this dataset, there are 8 features and 1 label. Most of the features are categorical with some that are numerical. In the following, distribution of features are presented. 
+The classification goal is to predict if the client will subscribe a term deposit.
 
 # *features:* 
 
-Education
+1 - age (numeric)
 
-![Education](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/Education.png)
+2 - job : type of job (categorical: "admin.","unknown","unemployed","management","housemaid","entrepreneur", "student","blue-collar","self-employed","retired","technician","services")
 
-JoiningYear
+3 - marital : marital status (categorical: "married","divorced","single"; note: "divorced" means divorced or widowed)
 
-![JoiningYear](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/joining_year.png)
+4 - education (categorical: "unknown","secondary","primary","tertiary")
 
-City
+5 - default: has credit in default? (binary: "yes","no")
 
-![City](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/city.png)
+6 - balance: average yearly balance, in euros (numeric)
 
-PaymentTier
+7 - housing: has housing loan? (binary: "yes","no")
 
-![PaymentTier](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/payment.png)
+8 - loan: has personal loan? (binary: "yes","no")
 
-Age
+- related with the last contact of the current campaign:
 
-![Age](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/age.png)
+9 - contact: contact communication type (categorical: "unknown","telephone","cellular")
 
-Gender
+10 - day: last contact day of the month (numeric)
 
-![Gender](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/gender.png)
+11 - month: last contact month of year (categorical: "jan", "feb", "mar", ..., "nov", "dec")
 
-EverBenched
+12 - duration: last contact duration, in seconds (numeric)
 
-![EverBenched](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/ever_benched.png)
+- other attributes:
 
-ExperienceInCurrentDomain
+13 - campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
 
-![ExperienceInCurrentDomain](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/figures/exp.png)
+14 - pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric, -1 means client was not previously contacted)
+
+15 - previous: number of contacts performed before this campaign and for this client (numeric)
+
+16 - poutcome: outcome of the previous marketing campaign (categorical: "unknown","other","failure","success")
+
 
 
 # *labels:* 
 
-LeaveOrNot
+success
 
-NotLeave    0.65
+no     0.884686
 
-Leave       0.35
-
-
-With these features, we will build a predictive model that returns the probability that an employee is going to leave the company.
+yes    0.115314
 
 
-# How to test the deployement?
-After deploying the predictive system, you can test it via the predict_test.py file provided. It posts the information of an employee and gets the probability of that employee leaving the company. 
-
-![test](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/screenshots/predict_test.jpg)
+With these features, we will build a predictive model that returns the probability that a client has subscribed to a term deposit.
 
 
 # Dependency and environment management:
@@ -92,3 +92,8 @@ docker run -it --rm -p 9696:9696 project1
 
 ![docker](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/screenshots/docker.jpg)
 
+
+# How to test the deployement?
+After deploying the predictive system, you can test it via the predict_test.py file provided. It posts the information of an employee and gets the probability of that employee leaving the company. 
+
+![test](https://github.com/AliAmini7/ml-zoom/blob/main/project%201/screenshots/predict_test.jpg)
